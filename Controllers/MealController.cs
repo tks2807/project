@@ -2,96 +2,132 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FoodOrder.Interfaces;
+using FoodOrder.Models;
+using FoodOrder.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using FoodOrdering;
 
-namespace FoodOrdering.Controllers
+namespace FoodOrder.Controllers
 {
-    [Route("api/meals")]
+    [Route("api/meal")]
     [ApiController]
     public class MealController : ControllerBase
     {
-        private OrderContext list;
-
-        public MealController(OrderContext list)
+        IMealRepository MealRepository;
+        public MealController(IMealRepository mealRepository)
         {
-            this.list = list;
+            MealRepository = mealRepository;
         }
 
         [HttpGet("getmeals")]
-        public List<Meal> GetAll()
+        public IEnumerable<Meal> GetAll()
         {
-            var meal = list.Meal.OrderBy(meal => meal.Id);
+            return MealRepository.GetAll();
+        }
+
+        [HttpGet("mid/{mealId}")]
+        public List<Meal> GetMealById(int mealId)
+        {
+            List<Meal> meal = MealRepository.GetMealById(mealId);
             return meal.ToList();
         }
 
-        [HttpGet("mid/{Id}")]
-        public List<Meal> GetMealById(int id)
+        [HttpGet("name/{name}")]
+        public List<Meal> GetMealByName(string name)
         {
-            var meal = list.Meal.Where(meal => meal.Id == id);
+            List<Meal> meal = MealRepository.GetMealByName(name);
             return meal.ToList();
         }
 
-        [HttpGet("price/{Price}")]
+        [HttpGet("type/{type}")]
+        public List<Meal> GetMealByType(string type)
+        {
+            List<Meal> meal = MealRepository.GetMealByType(type);
+            return meal.ToList();
+        }
+
+        [HttpGet("weight/{weight}")]
+        public List<Meal> GetMealByWeight(decimal weight)
+        {
+            List<Meal> meal = MealRepository.GetMealByWeight(weight);
+            return meal.ToList();
+        }
+
+        [HttpGet("quantity/{quantity}")]
+        public List<Meal> GetMealByQuantity(int quantity)
+        {
+            List<Meal> meal = MealRepository.GetMealByQuantity(quantity);
+            return meal.ToList();
+        }
+
+        [HttpGet("price/{price}")]
         public List<Meal> GetMealByPrice(int price)
         {
-            var meal = list.Meal.Where(meal => meal.Price == price);
+            List<Meal> meal = MealRepository.GetMealByPrice(price);
             return meal.ToList();
         }
 
-        [HttpGet("name/{Name}")]
-        public List<Meal> GetFoodByName(string name)
+        [HttpGet("cprice/{price}")]
+        public List<Meal> CheaperThanPrice(int price)
         {
-            var meal = list.Meal.Where(meal => meal.Name == name);
+            List<Meal> meal = MealRepository.CheaperThanPrice(price);
             return meal.ToList();
         }
 
-        [HttpGet("type/{Type}")]
-        public List<Meal> GetFoodByType(string type)
+        [HttpGet("eprice/{price}")]
+        public List<Meal> ExpensiveThanPrice(int price)
         {
-            var meal = list.Meal.Where(meal => meal.Type == type);
+            List<Meal> meal = MealRepository.ExpensiveThanPrice(price);
             return meal.ToList();
         }
 
-        [HttpGet("kcal/{Kcal}")]
-        public List<Meal> GetFoodByKcal(decimal kcal)
+        [HttpGet("empty")]
+        public List<Meal> EmptyMeals()
         {
-            var meal = list.Meal.Where(meal => meal.Kcal == kcal);
+            List<Meal> meal = MealRepository.EmptyMeals();
             return meal.ToList();
         }
 
-        [HttpPut("putmeals/{Id}")]
-        public ActionResult PutMeals(int id, Meal meals)
+        [HttpPost("createmeal")]
+        public IActionResult CreateMeal(Meal meal)
         {
-            if (id != meals.Id)
+            if (meal == null)
             {
                 return BadRequest();
             }
-            list.Entry(meals).State = EntityState.Modified;
-            list.SaveChanges();
+            MealRepository.CreateMeal(meal);
             return Accepted();
         }
 
-        [HttpPost("postmeals")]
-        public ActionResult PostMeals(Meal meals)
+        [HttpPut("updatemeal/{mealId}")]
+        public IActionResult UpdateMeal(int mealId, Meal meal)
         {
-            list.Meal.Add(meals);
-            list.SaveChanges();
-            return Accepted();
-        }
-
-        [HttpDelete("deletemeals/{Id}")]
-        public ActionResult DeleteMeals(int id)
-        {
-            var meals = list.Meal.Find(id);
-            if (id != meals.Id)
+            if (meal == null || meal.mealId != mealId)
             {
                 return BadRequest();
             }
-            list.Meal.Remove(meals);
-            list.SaveChanges();
+
+            var tmpmeal = MealRepository.Get(mealId);
+            if (tmpmeal == null)
+            {
+                return NotFound();
+            }
+
+            MealRepository.UpdateMeal(meal);
+            return Accepted();
+        }
+
+        [HttpDelete("deletemeal/{mealId}")]
+        public IActionResult DeleteMeal(int mealId)
+        {
+            var meal = MealRepository.DeleteMeal(mealId);
+
+            if (meal == null)
+            {
+                return BadRequest();
+            }
+
             return Accepted();
         }
     }

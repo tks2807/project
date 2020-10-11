@@ -2,84 +2,102 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FoodOrder.Interfaces;
+using FoodOrder.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using FoodOrdering;
 
-namespace FoodOrdering.Controllers
+namespace FoodOrder.Controllers
 {
-    [Route("api/users")]
+    [Route("api/user")]
     [ApiController]
     public class UserController : ControllerBase
     {
-        private OrderContext list;
-
-        public UserController(OrderContext list)
+        IUserRepository UserRepository;
+        public UserController(IUserRepository userRepository)
         {
-            this.list = list;
+            UserRepository = userRepository;
         }
 
         [HttpGet("getusers")]
-        public List<User> GetAll()
+        public IEnumerable<User> GetAll()
         {
-            var user = list.User.OrderBy(user => user.Id);
+            return UserRepository.GetAll();
+        }
+
+        [HttpGet("uid/{userId}")]
+        public List<User> GetUserById(int userId)
+        {
+            List<User> user = UserRepository.GetUserById(userId);
             return user.ToList();
         }
 
-        [HttpGet("uid/{Id}")]
-        public List<User> GetMealById(int id)
-        {
-            var user = list.User.Where(user => user.Id == id);
-            return user.ToList();
-        }
-
-        [HttpGet("username/{Username}")]
+        [HttpGet("username/{username}")]
         public List<User> GetUserByUsername(string username)
         {
-            var user = list.User.Where(user => user.Username == username);
+            List<User> user = UserRepository.GetUserByUsername(username);
             return user.ToList();
         }
 
-        [HttpGet("email/{Email}")]
+        [HttpGet("fname/{fname}")]
+        public List<User> GetUserByFname(string fname)
+        {
+            List<User> user = UserRepository.GetUserByFname(fname);
+            return user.ToList();
+        }
+
+        [HttpGet("lname/{lname}")]
+        public List<User> GetUserByLname(string lname)
+        {
+            List<User> user = UserRepository.GetUserByLname(lname);
+            return user.ToList();
+        }
+
+        [HttpGet("email/{email}")]
         public List<User> GetUserByEmail(string email)
         {
-            var user = list.User.Where(user => user.Email == email);
+            List<User> user = UserRepository.GetUserByEmail(email);
             return user.ToList();
-
         }
 
-        [HttpPut("putusers/{Id}")]
-        public ActionResult PutUsers(int id, User users)
+        [HttpPost("createuser")]
+        public IActionResult CreateUser(User user)
         {
-            if (id != users.Id)
+            if (user == null)
             {
                 return BadRequest();
             }
-            list.Entry(users).State = EntityState.Modified;
-            list.SaveChanges();
+            UserRepository.CreateUser(user);
             return Accepted();
         }
 
-        [HttpPost("postusers")]
-        public ActionResult PostUsers(User users)
+        [HttpPut("updateuser/{userId}")]
+        public IActionResult UpdateUser(int userId, User user)
         {
-            list.User.Add(users);
-            list.SaveChanges();
-            return Accepted();
-        }
-
-        [HttpDelete("deleteusers/{Id}")]
-        public ActionResult DeleteUsers(int id)
-        {
-            var users = list.User.Find(id);
-            if (id != users.Id)
+            if (user == null || user.userId != userId)
             {
                 return BadRequest();
             }
 
-            list.User.Remove(users);
-            list.SaveChanges();
+            var tmpuser = UserRepository.Get(userId);
+            if (tmpuser == null)
+            {
+                return NotFound();
+            }
+
+            UserRepository.UpdateUser(user);
+            return Accepted();
+        }
+
+        [HttpDelete("deleteuser/{userId}")]
+        public IActionResult DeleteUser(int userId)
+        {
+            var user = UserRepository.DeleteUser(userId);
+
+            if (user == null)
+            {
+                return BadRequest();
+            }
             return Accepted();
         }
     }

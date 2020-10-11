@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace FoodOrdering
+namespace FoodOrder.Models
 {
-    public partial class Meal
+    public class Meal
     {
-        public int Id { get; set; }
-        public int? Price { get; set; }
+        public int mealId { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }
-        public decimal? Kcal { get; set; }
+        public decimal Weight { get; set; }
+        public int Quantity { get; set; }
+        public int Price { get; set; }
     }
 }
