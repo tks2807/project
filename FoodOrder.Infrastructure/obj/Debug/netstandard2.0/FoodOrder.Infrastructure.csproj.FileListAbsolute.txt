@@ -1,0 +1,36 @@
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Infrastructure.deps.json
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Infrastructure.dll
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.csprojAssemblyReference.cache
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.AssemblyInfo.cs
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Core.dll
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Core.pdb
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.csproj.CopyComplete
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Infrastructure.pdb
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.dll
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.pdb
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Infrastructure.deps.json
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Infrastructure.dll
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Infrastructure.pdb
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Core.dll
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Core.pdb
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.AssemblyInfo.cs
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.csproj.CopyComplete
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.dll
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.pdb
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Infrastructure.deps.json
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Infrastructure.dll
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Infrastructure.pdb
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Core.dll
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Infrastructure\bin\Debug\netstandard2.0\FoodOrder.Core.pdb
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.AssemblyInfo.cs
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.csproj.CopyComplete
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.dll
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Infrastructure\obj\Debug\netstandard2.0\FoodOrder.Infrastructure.pdb

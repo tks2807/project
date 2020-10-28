@@ -1,0 +1,27 @@
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.csprojAssemblyReference.cache
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.AssemblyInfoInputs.cache
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.AssemblyInfo.cs
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Core\bin\Debug\netstandard2.0\FoodOrder.Core.deps.json
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Core\bin\Debug\netstandard2.0\FoodOrder.Core.dll
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Core\bin\Debug\netstandard2.0\FoodOrder.Core.pdb
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.dll
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.pdb
+C:\Users\murka\source\repos\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Core\bin\Debug\netstandard2.0\FoodOrder.Core.deps.json
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Core\bin\Debug\netstandard2.0\FoodOrder.Core.dll
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Core\bin\Debug\netstandard2.0\FoodOrder.Core.pdb
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.AssemblyInfo.cs
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.dll
+C:\Users\Admin\Desktop\project\FoodOrder (8)\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.pdb
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Core\bin\Debug\netstandard2.0\FoodOrder.Core.deps.json
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Core\bin\Debug\netstandard2.0\FoodOrder.Core.dll
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Core\bin\Debug\netstandard2.0\FoodOrder.Core.pdb
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.AssemblyInfo.cs
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.dll
+C:\Users\Admin\Desktop\project\FoodOrder\FoodOrder.Core\obj\Debug\netstandard2.0\FoodOrder.Core.pdb
